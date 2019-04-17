@@ -1,9 +1,0 @@
-{
-  "config": {
-    "grafana": {
-      "url": "http://grafana.zcc.zenvia.com",
-      "username": "svc_grafana_zcc",
-      "password": "z720tzilw5"
-    }
-  }
-}  
