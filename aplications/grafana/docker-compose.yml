@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  grafana:
+    image: grafana/grafana:5.0.0
+    container_name: grafana
+    environment:
+      - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app,grafana-piechart-panel,grafana-worldmap-panel
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./conf:/etc/grafana:z
+        #- /opt/data/grafana:/var/lib/grafana
